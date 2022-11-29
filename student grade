@@ -1,0 +1,24 @@
+#Student grade
+sno=int(input('enter sno '))
+sname=input('enter name ')
+s1=int(input('enter s1 '))
+s2=int(input('enter s2 '))
+s3=int(input('enter s3 '))
+print('sno=',sno)
+print('sname=',sname)
+print('result=')
+if s1>=35:
+  if s2>=35:
+    if s3>=35:
+       print('PASS')
+else:
+  print('FAIL')
+output:
+enter sno 456
+enter name venkat
+enter s1=45
+enter s2=56
+enter s3=89
+sno=456
+sname=venkat
+result=PASS
