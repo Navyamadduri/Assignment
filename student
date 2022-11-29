@@ -20,3 +20,6 @@ enter name venkat
 enter s1=45
 enter s2=56
 enter s3=89
+sno=456
+sname=venkat
+result=PASS
