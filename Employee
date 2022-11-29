@@ -1,0 +1,27 @@
+eno=int(input('enter no-'))
+ename=input('enter name-')
+edes=input('enter designation-')
+bsal=int(input('enter basic salary-'))
+ta=int(input('enter ta-'))
+da=int(input('enter da-'))
+hra=int(input('enter hra-')) 
+netsal=bsal+hra+ta+da
+print('tax=')
+if netsal>100000:
+  t=nsal*10/100
+elif netsal>50000:
+  t=netsal*7/100
+elif netsal>20000:
+  t=netsal*2/100
+elif netsal<20000:
+   print('no tax')
+
+output:
+enter no-456
+enter name:venkat
+enter designation:manager
+enter basic salary:20000
+enter ta=1000
+enter da=1000
+enter hra=1000
+tax=460.0
