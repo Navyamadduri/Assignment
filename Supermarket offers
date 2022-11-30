@@ -1,0 +1,70 @@
+#supermarket offers
+rice=250
+salt=30
+sugar=50
+maida=70
+chillipowder=100
+cphno=int(input('enter customer phone number:'))
+cname=input('enter customer name')
+caddress=input('enter customer address')
+ricequantity=int(input('enter no.of kgs of rice:'))
+saltquantity=int(input('enter no.of kgs of salt:'))
+sugarquantity=int(input('enter no.of kgs of sugar:'))
+maidaquantity=int(input('enter no.of kgs of maida:'))
+chillipowderquantity=int(input('enter no.of kgs of chilli powder:'))
+coupon=input('enter coupon:')
+bill=(ricequantity*rice)+(saltquantity*salt)+(sugarquantity*sugar)+(maidaquantity*maida)+(chillipowderquantity*chillipowder)
+if bill>3000:
+   tax=bill*5/100
+elif bill>2000:
+     tax=bill*7/100
+elif bill>1000:
+     tax=bill*10/100
+elif bill>500:
+     tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+   dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISTMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISTMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISTMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+     dis=0
+     
+print('customer number:',cphno)
+print('customer name:',cname)
+print('customer address:',caddress)
+print('bill without tax:',bill)
+print('tax=',tax)
+print('bill=',bill)
+print('discount=',dis)
+bill=bill+tax-dis
+print('bill amount:',bill)
+
+
+output:
+enter customer phone number:23
+enter customer name2  syz
+enter customer address kakinada
+enter no.of kgs of rice:2
+enter no.of kgs of salt:3
+enter no.of kgs of sugar:2
+enter no.of kgs of maida:4
+enter no.of kgs of chilli powder:2 4
+enter coupon:DIWALi
+customer number: 23
+customer name:  syz
+customer address:  kakinada
+bill without tax: 1370
+tax= 137.0
+bill= 1370
+discount= 0
+bill amount: 1507.0
