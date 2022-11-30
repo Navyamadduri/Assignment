@@ -1,0 +1,32 @@
+#bill for supermarket
+rice=250
+salt=30
+sugar=50
+maida=70
+chillipowder=100
+cphno=int(input('enter customer phone number:'))
+cname=input('enter customer name')
+caddress=input('enter customer address')
+ricequantity=int(input('enter no.of kgs of rice:'))
+saltquantity=int(input('enter no.of kgs of salt:'))
+sugarquantity=int(input('enter no.of kgs of sugar:'))
+maidaquantity=int(input('enter no.of kgs of maida:'))
+chillipowderquantity=int(input('enter no.of kgs of chilli powder:'))
+if bill>3000:
+   tax=bill*5/100
+elif bill>2000:
+     tax=bill*7/100
+elif bill>1000:
+     tax=bill*10/100
+elif bill>500:
+     tax=bill*15/100
+else:
+    tax=100
+print('customer number:',cphno)
+print('customer name:',cname)
+print('customer address:',caddress)
+print('bill without tax:',bill)
+print('tax=',tax)
+bill=bill+tax
+print('bill=',bill)
+
