@@ -1,0 +1,51 @@
+#way 1
+def is_leap(year):
+    if year%4==0 and year%100!=0:
+        print('Yes')
+    elif year%400==0:
+        print('Yes')
+    else:
+        print('No')
+year=int(input())
+is_leap(year)
+
+o/p:
+2004
+Yes
+
+
+#way 2
+def is_leap(year):
+    if year%4==0 and year%100!=0:
+        return 'Yes'
+    elif year%400==0:
+        return 'Yes'
+    else:
+        return 'No'
+year=int(input())
+print(is_leap(year))
+
+o/p:
+2004
+Yes
+
+
+#way 3
+def is_leap(year):
+    if year%4==0 and year%100!=0:
+        return True
+    elif year%400==0:
+        return False
+    else:
+        return False
+year=int(input())
+if(is_leap(year)):
+    print('Yes')
+    
+else:
+    print('No')
+    
+o/p:
+2004
+Yes
+
