@@ -1,0 +1,8 @@
+#Vote eligible or not
+age=int(input())
+print('Yes') if age>=18 else print('No')
+
+o/p:
+19
+Yes
+
