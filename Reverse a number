@@ -1,0 +1,17 @@
+#reverse a number
+n=int(input())
+reverse=0
+while(n>0):
+    r=n%10
+    reverse=(reverse*10)+r
+    n=n//10
+    print(reverse)
+    
+  o/p:
+12345
+5
+54
+543
+5432
+54321
+
