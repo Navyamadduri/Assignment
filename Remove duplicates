@@ -1,0 +1,17 @@
+#Removing duplicates
+
+n=int(input())
+L=list(map(int,input().split()))
+m=[]
+for i in L:
+    if i not in m:
+        m.append(i)
+print(m)
+
+'''
+output:
+6
+2 7 4 6 2 9 
+[1, 2, 6, 4]
+
+'''
