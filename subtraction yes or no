@@ -1,0 +1,21 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+c=0
+for i in range(0,n):
+  for j in range(i+1,n):
+    if a[i]-a[j]==k:
+       c=1
+       break
+if c==1:
+  print('YES')
+else:
+  print('NO')
+  
+  '''
+  o/p:
+6
+2 14 6 8 5 9
+9
+YES
+'''
