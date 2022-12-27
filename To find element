@@ -1,0 +1,19 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input('Enter element to search'))
+check=0
+for i in range(0,n):
+    if l[i]==x:
+        print('element is found at',i,'index location')
+        check=1
+        break
+if check==0:
+   print('element is not found')
+
+'''
+o/p:
+5
+1 2 3 4 3 5
+Enter element to search 3
+element is found at 2 index location
+'''
