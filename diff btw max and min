@@ -1,0 +1,15 @@
+#difference between maximum and minimum element from the list
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+l.sort()
+m=l[0:k]
+print("difference=",max(m)-min(m))
+
+'''
+o/p:
+6
+1 21 32 10 8 6
+3
+difference= 7
+'''
