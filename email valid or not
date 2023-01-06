@@ -1,0 +1,15 @@
+email=input()
+if email.endswith("@gmail.com"):
+    print("google mail")
+elif email.endswith("@yahoo.com"):
+    print("Yahoo mail")
+elif email.endswith("adc.aditya.ac.in"):
+    print("Aditya educational istitutions mail")
+else:
+    print("unknown mail")
+
+'''
+o/p:
+abc@gmail.com
+google mail
+'''
