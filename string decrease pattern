@@ -1,0 +1,17 @@
+s=input()
+l=len(s)
+for i in range(l):
+    for j in range(l-i):
+        print(s[j],end='')
+    print()
+        
+'''
+o/p:
+aditya
+aditya
+adity
+adit
+adi
+ad
+a
+'''
