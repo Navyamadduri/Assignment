@@ -1,0 +1,15 @@
+s=input()
+res=''
+n=len(s)
+for i in range(0,n):
+    if s[i].isdigit():
+        k=int(s[i])
+        for j in range(0,k):
+            if s[i-1].isdigit():
+                res=res+s[i-1]
+print(res)
+
+'''
+a2b2i2t2y2a2
+aaddiittyyaa
+'''
