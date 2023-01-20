@@ -1,0 +1,14 @@
+s=input()
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+result = ""
+for i in s:
+    if i not in vowels:
+        result=result+i
+print("After removing Vowels: ", result)
+
+'''
+o/p:
+aditya
+After removing Vowels:  dty
+
+'''
