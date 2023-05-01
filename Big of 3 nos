@@ -1,0 +1,17 @@
+p=int(input())
+q=int(input())
+r=int(input())
+if p>q and p>r:
+    print('p is big')
+elif q>r:
+    print('q is big')
+else:
+    print('r is big')
+    
+'''
+o/p:
+10
+20
+30
+r is big
+'''
