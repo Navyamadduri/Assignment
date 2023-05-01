@@ -1,0 +1,39 @@
+ind={}
+n=int(input("Enter no.of students:"))
+for i in range(1,n+1):
+    l=[]
+    sno=int(input('enter sno:'))
+    sname=input('enter sname:')
+    group=input('enter group:')
+    college=input('enter college branch:')
+    phno=int(input('enter phone number:'))
+    l.append(sname)
+    l.append(group)
+    l.append(college)
+    l.append(phno)
+    ind[sno]=l
+    print(ind)
+    
+ '''
+o/p:
+Enter no.of students:3
+enter sno:1
+enter sname:navya
+enter group:mscs
+enter college branch:ae wdckkd
+enter phone number:1234567890
+{1: ['navya', 'mscs', 'awdckkd', 1234567890]}
+enter sno:2
+enter sname:rakshita
+enter group:mscs
+enter college branch:awdckkd
+enter phone number:9876543210
+{1: ['navya', 'mscs', 'awdckkd', 1234567890], 2: ['rakshita', 'mscs', 'awdckkd', 9876543210]}
+enter sno:3
+enter sname:sneha
+enter group:mscs
+enter college branch:awdckkd
+enter phone number:9876541230
+{1: ['navya', 'mscs', 'awdckkd', 1234567890], 2: ['rakshita', 'mscs', 'awdckkd', 9876543210], 3: ['sneha', 'mscs', 'awdckkd', 9876541230]}
+
+'''
