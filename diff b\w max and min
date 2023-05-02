@@ -1,0 +1,21 @@
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+r=max(m)
+p=min(m)
+print("maximum=",r)
+print("minimum=",p)
+print("difference=",r-p)
+
+'''
+o/p:
+1 2 3 4 5 6 7 1 2 3 4 5 7 5 5 5 
+maximum= 5
+minimum= 1
+difference= 4
+'''
