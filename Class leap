@@ -1,0 +1,14 @@
+#To find given year is leay year or not 
+class Solution:
+    def leapyear(self,y):
+        if y%4==0 and y%100!=0:
+            return True
+        elif y%400==0:
+            return True
+        return False
+y=int(input())
+s=Solution()
+if s.leapyear(y):
+    print('leap year')
+else:
+    print('not a leap year')
