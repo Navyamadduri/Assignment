@@ -16,5 +16,5 @@ sum=0
 for i in range(0,t):
      num=int(input("Enter a number: \n"))                                       
      f=isprime(num) 
-    sum=sum+f 
+     sum=sum+f 
 print("sum of primes is ", sum)
