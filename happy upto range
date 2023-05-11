@@ -1,0 +1,15 @@
+def happy(n):
+    r=0
+    s=0
+    while(n>0):
+        r=n%10
+        s=s+(r*r)
+        n=n//10
+    return s
+num=int(input())
+for i in range(1,num+1):
+    s=i
+    while(s!=1 and s!=4):
+        s=happy(s)
+    if(s==1):
+        print(i,end=" ")
