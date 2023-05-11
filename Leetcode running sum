@@ -1,5 +1,5 @@
 class Solution:
-    def runningSum(sel,arr):
+    def runningSum(self,arr):
                    n=len(arr)
                    pf=[0]*(n)
                    pf[0]=arr[0]
