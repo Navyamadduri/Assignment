@@ -7,3 +7,10 @@ class Solution:
             winsum=winsum-Arr[i]+Arr[i+K]
             maxsum=max(maxsum,winsum)
         return maxsum
+ '''
+ Input:
+N = 4, K = 2
+Arr = [100, 200, 300, 400]
+Output:
+700
+'''
